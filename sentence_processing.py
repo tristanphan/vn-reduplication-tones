@@ -11,7 +11,7 @@ def tokenize(file: Path):
         "-cp", "bin:lib/lbfgs.jar:lib/args4j.jar",
         "jvntokenizer.JVnTokenizer",
         "-inputfile", str(file.absolute()),
-    ], cwd="JVnTextPro-v.2.0")
+    ], cwd="JVnTextPro")
     if completed_process.returncode != 0:
         print("JVnTokenizerresulted in an error!")
         exit(1)
@@ -25,7 +25,7 @@ def segment(file: Path):
         "jvnsegmenter.WordSegmenting",
         "-modeldir", "models/jvnsegmenter",
         "-inputfile", str(file.absolute()),
-    ], cwd="JVnTextPro-v.2.0")
+    ], cwd="JVnTextPro")
     if completed_process.returncode != 0:
         print("JVnSegmenter resulted in an error!")
         exit(1)

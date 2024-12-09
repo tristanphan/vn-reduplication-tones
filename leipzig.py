@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 from typing import List, Set, Iterable, Tuple, Generator
 
-FOLDER: Path = Path("leipzig")
+FOLDER: Path = Path("Leipzig")
 
 # In order of importance; similarity checking will prioritize the first 3
 CORPORA: List[Path] = list(map(
