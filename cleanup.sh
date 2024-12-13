@@ -7,4 +7,4 @@ then
     exit 1
 fi
 
-sudo rm -rf venv JVnTextPro Leipzig sentences.*
+sudo rm -rf venv JVnTextPro Leipzig sentences.* reduplicates.* distribution_matrix.*
